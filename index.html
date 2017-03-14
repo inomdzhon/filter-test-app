@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<title>App - Tournaments</title>
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<link rel="stylesheet" href="assets/css/main/styles.css"/>
+	</head>
+	<body>
+		<div class="l-wrap">
+			<header class="l-header">
+	<div class="l-header__top">
+		<h1 class="l-header__title">
+			<span data-screen="mobile">Турнир</span>
+			<span data-screen="desktop"><span class="b-price">32 566 534 203<span class="u-ff-ruble">o</span></span> уже выплачено!</span>
+		</h1>
+		<div class="l-header__burger">
+			<button class="b-burger js-menu-trigger" type="button"><i class="b-burger__middle-line"></i></button>
+		</div>
+	</div>
+	<div class="l-header__menu js-menu">
+		<ul class="l-filter">
+			<li class="l-filter__item">
+				<label class="b-radio">
+					<input class="b-radio__native js-filter" type="radio" name="filter[param]" value="all" checked>
+					<span class="b-radio__label">Все турниры</span>
+				</label>
+			</li>
+			<li class="l-filter__item">
+				<label class="b-radio">
+					<input class="b-radio__native js-filter" type="radio" name="filter[param]" value="active">
+					<span class="b-radio__label">Активные турниры</span>
+				</label>
+			</li>
+			<li class="l-filter__item">
+				<label class="b-radio">
+					<input class="b-radio__native js-filter" type="radio" name="filter[param]" value="nearest">
+					<span class="b-radio__label">Ближайшие турниры</span>
+				</label>
+			</li>
+			<li class="l-filter__item">
+				<label class="b-radio">
+					<input class="b-radio__native js-filter" type="radio" name="filter[param]" value="vip">
+					<span class="b-radio__label">VIP-турниры</span>
+				</label>
+			</li>
+			<li class="l-filter__item">
+				<label class="b-radio">
+					<input class="b-radio__native js-filter" type="radio" name="filter[param]" value="last">
+					<span class="b-radio__label">Прошедшие турниры</span>
+				</label>
+			</li>
+		</ul>
+	</div>
+</header>
+				<main class="l-main">
+			<div class="l-list js-list">
+				<article data-param='["active", "vip"]' class="l-list__item l-list__item--big b-card b-card--main is-prepare js-list-item">
+					<div class="b-card__image" style="background-image: url('assets/img/main/test/titans.jpg');"></div>
+					<div class="b-card__header">
+						<div class="b-card-privilege"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" class="b-card-privilege__icon"><path d="M11.9 1.7L10 0 8.2 1.7 10 3.5l1.9-1.8zm-10.5.5L0 3.5l1.4 1.2 1.4-1.2-1.4-1.3zM16 13.1H4v.9h12v-.9zm-6-9.5L6.1 7.1l-4-2.6L4 12.1h12l2-7.6L14 7l-4-3.4zm0 6.7L8.6 9 10 7.6l1.4 1.3-1.4 1.4zm8.6-8.1l-1.4 1.2 1.4 1.2L20 3.5l-1.4-1.3z"/></svg> <span class="b-card-privilege__text">Только для VIP</span></div>
+					</div>
+					<div class="b-card__body">
+						<h2 class="b-card__title">Это Спарта!</h2>
+						<div class="b-card-action">
+							<span class="b-card-action__text">Уже пора</span><a class="b-card-action__btn b-btn" href="#">Присоединиться</a>
+						</div>
+					</div>
+				</article>
+				<article data-param='["active", "vip"]' class="l-list__item b-card is-prepare js-list-item">
+					<div class="b-card__image" style="background-image: url('assets/img/main/test/crown.svg');"></div>
+					<div class="b-card__header">
+						<div class="b-card-privilege">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" class="b-card-privilege__icon"><path d="M11.9 1.7L10 0 8.2 1.7 10 3.5l1.9-1.8zm-10.5.5L0 3.5l1.4 1.2 1.4-1.2-1.4-1.3zM16 13.1H4v.9h12v-.9zm-6-9.5L6.1 7.1l-4-2.6L4 12.1h12l2-7.6L14 7l-4-3.4zm0 6.7L8.6 9 10 7.6l1.4 1.3-1.4 1.4zm8.6-8.1l-1.4 1.2 1.4 1.2L20 3.5l-1.4-1.3z"/></svg> <span class="b-card-privilege__text">Только для VIP</span>
+						</div>
+					</div>
+					<div class="b-card__body">
+						<h2 class="b-card__title"><span class="b-card__highlight-text">Топ 13</span> царских корон</h2>
+						<span class="b-card__user-status">Ты в топ-10 лидеров</span>
+					</div>
+				</article>
+				<article data-param='["active", "vip"]' class="l-list__item b-card is-prepare js-list-item">
+					<div class="b-card__image" style="background-image: url('assets/img/main/test/rocket.svg');"></div>
+					<div class="b-card__header">
+						<div class="b-card-privilege">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" class="b-card-privilege__icon"><path d="M11.9 1.7L10 0 8.2 1.7 10 3.5l1.9-1.8zm-10.5.5L0 3.5l1.4 1.2 1.4-1.2-1.4-1.3zM16 13.1H4v.9h12v-.9zm-6-9.5L6.1 7.1l-4-2.6L4 12.1h12l2-7.6L14 7l-4-3.4zm0 6.7L8.6 9 10 7.6l1.4 1.3-1.4 1.4zm8.6-8.1l-1.4 1.2 1.4 1.2L20 3.5l-1.4-1.3z"/></svg> <span class="b-card-privilege__text">Только для VIP</span>
+						</div>
+					</div>
+					<div class="b-card__body">
+						<h2 class="b-card__title"><span>Гагарин в космосе</span></h2>
+						<span class="b-card__user-status">Ты в топ-10 лидеров</span>
+					</div>
+				</article>
+				<article data-param='["active"]' class="l-list__item b-card is-prepare js-list-item">
+					<div class="b-card__image" style="background-image: url('assets/img/main/test/rocket.svg');"></div>
+					<div class="b-card__header">
+						<div class="b-card-privilege">
+							<span class="b-card-privilege__text">Для всех уровней</span>
+						</div>
+					</div>
+					<div class="b-card__body">
+						<h2 class="b-card__title"><span>Lorem Ipsum</span></h2>
+						<span class="b-card__user-status">Ты на 5-ом уровне</span>
+					</div>
+				</article>
+				<article data-param='["nearest"]' class="l-list__item b-card is-prepare js-list-item">
+					<div class="b-card__image" style="background-image: url('assets/img/main/test/rocket.svg');"></div>
+					<div class="b-card__header">
+						<div class="b-card-privilege">
+							<span class="b-card-privilege__text">Для всех уровней</span>
+						</div>
+					</div>
+					<div class="b-card__body">
+						<h2 class="b-card__title"><span>Cowabunga!</span></h2>
+						<span class="b-card__user-status">Ты на 23-ом уровне</span>
+					</div>
+				</article>
+			</div>
+	</main>
+	<div class="l-wrap-up-btn js-up-btn">
+		<button class="b-btn b-btn--circle js-up-btn-trigger" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="10.6" viewBox="0 0 20 10.6" class="b-btn__icon"><path d="M9.6.2L.2 9.6c-.2.2-.2.6 0 .8.2.2.6.2.8 0l9-9 9 9c.2.2.6.2.8 0 .1-.1.2-.3.2-.4 0-.1-.1-.3-.2-.4L10.4.2c-.2-.3-.6-.3-.8 0z"/></svg></button>
+	</div>
+		</div>
+		<script src="assets/js/main/scripts.js"></script>
+	</body>
+</html>
