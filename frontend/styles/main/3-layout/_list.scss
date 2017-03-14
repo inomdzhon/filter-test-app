@@ -21,6 +21,8 @@
 	}
 
 	@media #{above('medium')} {
+		min-height: 640px;
+
 		&__item {
 			flex-basis: (320 / map-get($map-media, 'medium')) * 100%;
 		}
@@ -31,8 +33,6 @@
 	}
 
 	@media #{above('large')} {
-		min-height: 640px;
-
 		&__item {
 			flex-basis: (320 / map-get($map-media, 'large')) * 100%;
 		}
