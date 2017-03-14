@@ -1,0 +1,57 @@
+$btn-height: 52px;
+
+.b-btn {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0 25px;
+	width: 100%;
+	height: $btn-height;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: $btn-height;
+	border: none;
+	color: $white;
+	background: $color-accent;
+	border-radius: 4px;
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+	transition: background-color .3s ease;
+	-webkit-appearance: none;
+
+	&:disabled,
+	&[disabled] {
+		opacity: 0.5;
+		cursor: default;
+		pointer-events: none;
+	}
+}
+
+a.b-btn {
+	text-decoration: none;
+}
+
+.b-btn--circle {
+	margin: 0;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	background: rgba($white, .3);
+	border-radius: 50%;
+	transition: background .3s ease;
+
+	.b-btn__icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 20px;
+		height: auto;
+		fill: currentColor;
+		transform: translate(-50%, -50%);
+	}
+
+	&:hover {
+		background: rgba($white, .5);
+	}
+}

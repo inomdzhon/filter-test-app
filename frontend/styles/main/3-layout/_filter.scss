@@ -1,0 +1,13 @@
+.l-filter {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+
+	&__item {
+		margin: 0;
+		padding: 10px;
+		list-style: none;
+	}
+}

@@ -1,0 +1,22 @@
+.l-wrap {
+	position: relative;
+	font-family: 'OpenSans';
+	font-weight: 400;
+	color: $color-primary;
+	background: $color-secondary;
+	overflow-x: hidden;
+}
+
+.l-wrap-up-btn {
+	position: fixed;
+	right: 10px;
+	bottom: 18%;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .3s ease;
+
+	&.is-active {
+		opacity: 1;
+		pointer-events: auto;
+	}
+}

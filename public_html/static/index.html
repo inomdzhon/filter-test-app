@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Guideline</title>
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="/assets/css/main/styleguide.css">
+	</head>
+	<body class="g-page">
+		<header class="g-header js-menu">
+			<div class="g-header__burger js-trigger" data-item=".js-menu" data-action="toggle">
+				<svg class="g-burger" viewBox="0 0 48 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<g>
+						<rect x="0" y="0" width="48" height="5"></rect>
+						<rect x="0" y="15" width="48" height="5"></rect>
+						<rect x="0" y="30" width="48" height="5"></rect>
+					</g>
+				</svg>
+			</div>
+			<div class="g-header__inner">
+				<div class="g-header__logo">
+					<div class="g-logo">
+						<span class="g-logo__text">Guideline</span>
+					</div>
+				</div>
+				<nav class="g-header__nav">
+					<ul class="g-nav">
+						<li class="g-nav__item js-trigger" data-item=".js-menu" data-action="remove"><a href="#pages" class="g-nav__link">Страницы</a></li>
+						<li class="g-nav__item js-trigger" data-item=".js-menu" data-action="remove"><a href="#blocks" class="g-nav__link">Блоки</a></li>
+						<li class="g-nav__item js-trigger" data-item=".js-menu" data-action="remove"><a href="#typo" class="g-nav__link">Типографика</a></li>
+						<li class="g-nav__item js-trigger" data-item=".js-menu" data-action="remove"><a href="#colors" class="g-nav__link">Цвета</a></li>
+						<li class="g-nav__item js-trigger" data-item=".js-menu" data-action="remove"><a href="#links" class="g-nav__link">Ссылки</a></li>
+						<li class="g-nav__item js-trigger" data-item=".js-menu" data-action="remove"><a href="#buttons" class="g-nav__link">Кнопки</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="g-header__overlay js-trigger" data-item=".js-menu" data-action="remove"></div>
+		</header>
+		<main class="g-main">
+			<div class="g-main__inner">
+				<section class="g-section" id="pages">
+					<h2 class="g-section__title">Страницы</h2>
+					<div class="g-section__content">
+						<ul class="g-list">
+							<li><a href="../static/pages/index.html">Главная</a></li>
+						</ul>
+					</div>
+				</section>
+				<section class="g-section" id="blocks">
+					<h2 class="g-section__title">Блоки</h2>
+					<div class="g-section__content">
+						<ul class="g-list">
+							<li><a href="../static/blocks/header/index.html">Header</a></li>
+						</ul>
+					</div>
+				</section>
+				<section class="g-section" id="typo">
+					<h2 class="g-section__title">Типографика</h2>
+					<div class="g-section__content">
+
+					</div>
+				</section>
+				<section class="g-section" id="links">
+					<h2 class="g-section__title">Цвета</h2>
+					<div class="g-section__content">
+
+					</div>
+				</section>
+				<section class="g-section" id="links">
+					<h2 class="g-section__title">Ссылки</h2>
+					<div class="g-section__content">
+
+					</div>
+				</section>
+				<section class="g-section" id="buttons">
+					<h2 class="g-section__title">Кнопки</h2>
+					<div class="g-section__content">
+
+					</div>
+				</section>
+			</div>
+		</main>
+		<script type="text/javascript">
+			document.querySelectorAll('.js-trigger').forEach(function(triggerElem) {
+				triggerElem.addEventListener('click', function(evt) {
+					var className = this.dataset.item;
+					var action    = this.dataset.action;
+					var elem      = document.querySelector(className);
+
+					elem.classList[action]('open');
+					document.body.classList[action]('fix');
+				});
+			});
+		</script>
+	</body>
+</html>

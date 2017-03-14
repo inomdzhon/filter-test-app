@@ -1,0 +1,18 @@
+// Import fonts
+@mixin font($family, $src, $weight: false, $style: false) {
+	 @font-face{
+		font-family: quote($family);
+		src: url('../../fonts/' + $src + '.eot');
+		src: url('../../fonts/' + $src + '.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/' + $src + '.ttf') format('truetype'),
+		url('../../fonts/' + $src + '.woff') format('woff');
+
+		@if($weight) {
+			font-weight: $weight;
+		}
+
+		@if($style) {
+			font-style: $style;
+		}
+	}
+}

@@ -1,0 +1,7 @@
+@function below($measure) {
+	@return 'only screen and (max-width: #{map-get($map-media, $measure) - 1}px)';
+}
+
+@function above($measure) {
+	@return 'only screen and (min-width: #{map-get($map-media, $measure)}px)';
+}

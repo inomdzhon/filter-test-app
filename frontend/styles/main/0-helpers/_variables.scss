@@ -1,0 +1,27 @@
+/**
+ * Размеры экранов
+ */
+$map-media: (
+	'small'  : 300,
+	'medium' : 960,
+	'large'  : 1280
+);
+
+/**
+ * Цвета
+ */
+$white: #fff;
+$black: #000;
+$black-pearl: #041120;
+$heather: #c8d0dc;
+$mirage: #192431;
+$fruit-salad: #4da84b;
+$apple: #4db94b;
+
+/**
+ * Выделение цвета в стайлгид
+ */
+$color-primary: $heather;
+$color-secondary: $mirage;
+$color-accent: $fruit-salad;
+$color-accent-light: $apple;

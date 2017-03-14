@@ -1,0 +1,71 @@
+{% extends './layouts/_layout.twig' %}
+
+{% block content %}
+	<main class="l-main">
+			<div class="l-list js-list">
+				<article data-param='["active", "vip"]' class="l-list__item l-list__item--big b-card b-card--main is-prepare js-list-item">
+					<div class="b-card__image" style="background-image: url('/assets/img/main/test/titans.jpg');"></div>
+					<div class="b-card__header">
+						<div class="b-card-privilege">{{ getSvg('main/vip', 'b-card-privilege__icon') }} <span class="b-card-privilege__text">Только для VIP</span></div>
+					</div>
+					<div class="b-card__body">
+						<h2 class="b-card__title">Это Спарта!</h2>
+						<div class="b-card-action">
+							<span class="b-card-action__text">Уже пора</span><a class="b-card-action__btn b-btn" href="#">Присоединиться</a>
+						</div>
+					</div>
+				</article>
+				<article data-param='["active", "vip"]' class="l-list__item b-card is-prepare js-list-item">
+					<div class="b-card__image" style="background-image: url('/assets/img/main/test/crown.svg');"></div>
+					<div class="b-card__header">
+						<div class="b-card-privilege">
+							{{ getSvg('main/vip', 'b-card-privilege__icon') }} <span class="b-card-privilege__text">Только для VIP</span>
+						</div>
+					</div>
+					<div class="b-card__body">
+						<h2 class="b-card__title"><span class="b-card__highlight-text">Топ 13</span> царских корон</h2>
+						<span class="b-card__user-status">Ты в топ-10 лидеров</span>
+					</div>
+				</article>
+				<article data-param='["active", "vip"]' class="l-list__item b-card is-prepare js-list-item">
+					<div class="b-card__image" style="background-image: url('/assets/img/main/test/rocket.svg');"></div>
+					<div class="b-card__header">
+						<div class="b-card-privilege">
+							{{ getSvg('main/vip', 'b-card-privilege__icon') }} <span class="b-card-privilege__text">Только для VIP</span>
+						</div>
+					</div>
+					<div class="b-card__body">
+						<h2 class="b-card__title"><span>Гагарин в космосе</span></h2>
+						<span class="b-card__user-status">Ты в топ-10 лидеров</span>
+					</div>
+				</article>
+				<article data-param='["active"]' class="l-list__item b-card is-prepare js-list-item">
+					<div class="b-card__image" style="background-image: url('/assets/img/main/test/rocket.svg');"></div>
+					<div class="b-card__header">
+						<div class="b-card-privilege">
+							<span class="b-card-privilege__text">Для всех уровней</span>
+						</div>
+					</div>
+					<div class="b-card__body">
+						<h2 class="b-card__title"><span>Lorem Ipsum</span></h2>
+						<span class="b-card__user-status">Ты на 5-ом уровне</span>
+					</div>
+				</article>
+				<article data-param='["nearest"]' class="l-list__item b-card is-prepare js-list-item">
+					<div class="b-card__image" style="background-image: url('/assets/img/main/test/rocket.svg');"></div>
+					<div class="b-card__header">
+						<div class="b-card-privilege">
+							<span class="b-card-privilege__text">Для всех уровней</span>
+						</div>
+					</div>
+					<div class="b-card__body">
+						<h2 class="b-card__title"><span>Cowabunga!</span></h2>
+						<span class="b-card__user-status">Ты на 23-ом уровне</span>
+					</div>
+				</article>
+			</div>
+	</main>
+	<div class="l-wrap-up-btn js-up-btn">
+		<button class="b-btn b-btn--circle js-up-btn-trigger" type="button">{{ getSvg('main/next', 'b-btn__icon') }}</button>
+	</div>
+{% endblock %}
